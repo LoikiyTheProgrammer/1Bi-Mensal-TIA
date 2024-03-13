@@ -29,10 +29,18 @@ export const palavrasMatricula = {
     matched: 0,
 }
 
+export const palavrasPalavrao = {
+    probrablyWords: [
+    "Caralho", "Porra", "Puta-que-pariu",
+    "Merda", "Puta-merda", "Cacete"
+    ],
+    matched: 0,
+}
+
 export const palavrasPapoFurado = {
     probablyWords: [
         "basquete", "triatlo", "ping-pong",
-        "escola", "sair", "comida",
+        "futebol", "cinema", "comida",
         "tempo", "clima"
     ],
     matched: 0,
@@ -46,6 +54,8 @@ function respondePergunta(index) {
             return "Sim, a escola oferece curso técnico, como: Ti, Games, Farmácia, Medicina, Nutrição, Biotec, Publicidade, entre vários outros."
         case 2:
             return "No site do Bento Quirino: https://www.bentoquirino.com.br/novo/contato/matriculas/"
+        case 3:
+            return "Não xinga porra!"
         default:
             return "Só sei tirar duvidas sobre o Bento Quirino, se não for isso, tchau"
     }
@@ -61,6 +71,7 @@ export function mostProbablyQuestion(pergunta) {
         palavrasEscolaFundador.matched, 
         palavrasCursosTecnicos.matched, 
         palavrasMatricula.matched,
+        palavrasPalavrao.matched,
         palavrasPapoFurado.matched,
     ]
     console.log(matches)
