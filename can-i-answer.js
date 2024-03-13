@@ -79,3 +79,5 @@ export function mostProbablyQuestion(pergunta) {
     console.log(matches.indexOf(Math.max(...matches)))
     return respondePergunta(matches.indexOf(Math.max(...matches)))
 }
+
+// adicionei uma const palavrasPalavrao para caso o usuário faça um pergunta xingando
