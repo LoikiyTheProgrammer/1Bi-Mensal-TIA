@@ -1,5 +1,4 @@
-import { palavrasEscolaFundador, palavrasCursosTecnicos, 
-        palavrasMatricula, palavrasPapoFurado, mostProbablyQuestion } from './can-i-answer.js'
+import { palavrasEscolaFundador, palavrasCursosTecnicos, palavrasMatricula, palavrasPalavrao, palavrasPapoFurado, mostProbablyQuestion } from './can-i-answer.js'
 
 console.log("Olá, sou um chatbot que responde perguntas sobre o Bento Quirino!")
 let pergunta = "Qual o nome do fundador da instituição?"
@@ -7,7 +6,7 @@ pergunta = pergunta.toLowerCase()
 pergunta = pergunta.split(' ')
 
 const bancos = [
-    palavrasEscolaFundador, palavrasCursosTecnicos, palavrasMatricula, palavrasPapoFurado,
+    palavrasEscolaFundador, palavrasCursosTecnicos, palavrasMatricula, palavrasPalavrao, palavrasPapoFurado,
 ]
 
 for (let i = 0; i < pergunta.length; i++) {
