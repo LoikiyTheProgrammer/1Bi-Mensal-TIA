@@ -49,7 +49,7 @@ export const palavrasPapoFurado = {
 function respondePergunta(index) {
     switch (index) {
         case 0:
-            return "O fundador da escola Bento Quirino foi o Bento Quirino."
+            return "O fundador da escola Bento Quirino foi o Bento Quirino de Santos."
         case 1:
             return "Sim, a escola oferece curso técnico, como: Ti, Games, Farmácia, Medicina, Nutrição, Biotec, Publicidade, entre vários outros."
         case 2:
